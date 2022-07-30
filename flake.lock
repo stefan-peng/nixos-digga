@@ -38,26 +38,6 @@
     "darwin": {
       "inputs": {
         "nixpkgs": [
-          "nixpkgs-darwin-stable"
-        ]
-      },
-      "locked": {
-        "lastModified": 1657835815,
-        "narHash": "sha256-CnZszAYpNKydh6N7+xg+eRtWNVoAAGqc6bg+Lpgq1xc=",
-        "owner": "LnL7",
-        "repo": "nix-darwin",
-        "rev": "54a24f042f93c79f5679f133faddedec61955cf2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "LnL7",
-        "repo": "nix-darwin",
-        "type": "github"
-      }
-    },
-    "darwin_2": {
-      "inputs": {
-        "nixpkgs": [
           "digga",
           "nixpkgs"
         ]
@@ -123,7 +103,7 @@
     "digga": {
       "inputs": {
         "blank": "blank",
-        "darwin": "darwin_2",
+        "darwin": "darwin",
         "deploy": [
           "deploy"
         ],
@@ -421,22 +401,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-darwin-stable": {
-      "locked": {
-        "lastModified": 1659134756,
-        "narHash": "sha256-LjmTCJPclW3oaaoEiuG3VFttixnUEXwnKXIQaW/IOys=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "876ae828359bf58e5992c54b5b55ddac6cf0670b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-22.05-darwin",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1657292830,
@@ -506,7 +470,6 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "darwin": "darwin",
         "deploy": "deploy",
         "digga": "digga",
         "home": "home",
@@ -516,7 +479,6 @@
         "nixos-generators": "nixos-generators",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-darwin-stable": "nixpkgs-darwin-stable",
         "nur": "nur",
         "nvfetcher": "nvfetcher"
       }

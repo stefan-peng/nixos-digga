@@ -124,7 +124,7 @@
           };
           users = {
             nixos = { suites, ... }: { imports = suites.base; };
-            speng = { suites, ... }: { imports = suites.personal; }; #++ [ ./users/speng/home.nix ];
+            speng = { suites, ... }: { imports = suites.personal ++ [ ./users/speng/home.nix ]; };
           };
         };
 
